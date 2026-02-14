@@ -20,21 +20,21 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Sem modificações.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
-
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os arquivos CSV são carregados utilizando biblioteca de manipulação de dados (ex: pandas), e os arquivos JSON são importados como dicionários estruturados no início da sessão.
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
+O agente utiliza estratégia de injeção dinâmica de contexto.
 
-[Sua descrição aqui]
+O system prompt define o papel do agente como consultor financeiro especializado.
+
+Os dados relevantes do cliente são recuperados dinamicamente no momento da pergunta e inseridos no contexto antes da geração da resposta.
 
 ---
 
